@@ -1,18 +1,16 @@
-#find_package(SDL2 REQUIRED)
-#find_package(SDL2_ttf REQUIRED)
-#find_package(SDL2_image REQUIRED)
+set(MODULE_ID sandbox)
+
 find_package(spdlog REQUIRED)
 
-add_executable(sandbox
+add_executable(${MODULE_ID}
   main.cpp
   )
 
-target_link_libraries(sandbox PRIVATE
+target_include_directories(${MODULE_ID} PUBLIC .)
+
+target_link_libraries(${MODULE_ID} PRIVATE
   project_warnings
   project_options
   core
   spdlog::spdlog
-  #  SDL2::SDL2
-  #SDL2_ttf::SDL2_ttf
-  #SDL2_image::SDL2_image
   )

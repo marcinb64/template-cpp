@@ -38,7 +38,5 @@ list(APPEND CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR}/conan)
 #
 # Project structure
 #
-include_directories(.)
-
 add_subdirectory(core)
 add_subdirectory(app)
