@@ -1,0 +1,10 @@
+[requires]
+spdlog/1.10.0
+catch2/3.1.0
+
+#sdl/2.0.20
+#sdl_ttf/2.0.18
+#sdl_image/2.0.5
+
+[generators]
+cmake_find_package

@@ -1,0 +1,23 @@
+---
+Checks: >
+  -*,
+  bugprone-*,
+  cert-*,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-avoid-magic-numbers,
+  misc-*,
+  modernize-*
+  -modernize-use-trailing-return-type,
+  performance-*,
+  readability-*,
+  -readability-magic-numbers,
+  -readability-identifier-length,
+  -readability-braces-around-statements,
+  -readability-uppercase-literal-suffix,
+
+CheckOptions:
+  - key:             cppcoreguidelines-avoid-magic-numbers.IgnoredIntegerValues
+    value:           '1;2;3;4;8;16;24;32;255;65535;16777215;4294967295;65280'
+WarningsAsErrors: '0'
+HeaderFilterRegex: ''
+FormatStyle:     none
