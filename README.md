@@ -2,7 +2,7 @@
 
 ## TODOs
 
- - [ ] Update author name and year in LICENSE file
+ - [ ] [Choose license](https://choosealicense.com) and update LICENSE file
  - [ ] Update project metadata in conanfile.py
  - [ ] Update project name in CMakeLists.txt
  - [ ] Update this README file
