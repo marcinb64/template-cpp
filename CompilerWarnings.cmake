@@ -97,10 +97,4 @@ function (set_project_warnings project_name)
                 "No compiler warnings set for '${CMAKE_CXX_COMPILER_ID}' compiler."
         )
     endif ()
-
-    # Sanitizers
-    if (ENABLE_SANITIZERS)
-        target_compile_options(project_options INTERFACE "-fsanitize=address")
-        target_link_options(project_options INTERFACE "-fsanitize=address")
-    endif ()
 endfunction ()
